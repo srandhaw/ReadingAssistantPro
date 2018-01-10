@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.purdue.srandhaw.readingassistantpro.MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_btn_speak_now"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:elevation="19dp"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="315dp"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="press the button below to work on the text."
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="?android:attr/actionMenuTextColor"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_media_play"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="?attr/colorButtonNormal"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:hint="Just write something below or tap on the speak button to speak."
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
